@@ -16,8 +16,6 @@
 header {
   display: flex;
   position: sticky;
-  background-color: #1A4447;
-  justify-content: space-around;
   top: 0;
   width: 100%;
 }
@@ -33,6 +31,19 @@ nav a{
   padding-bottom: .5em;
   padding-left: 1em;
   padding-right: 1em;
-  border: dashed red .2em;
+  border: solid #969696 .2em;
+  background-color: #bfefff;
   color: black;
+}
+
+/* BOXES */
+.boxes{
+  display: flex;
+  /* justify-content: center; */
+  /* justify-content: space-around; */
+}
+
+.schnupper, .competitions, .ranking, .corona{
+  border: solid black .2px;
+  padding: .5em;
 }
