@@ -36,29 +36,3 @@ nav a{
   border: dashed red .2em;
   color: black;
 }
-
-/* ANCHOR */
-a.anchor {
-    display: block;
-    position: relative;
-    top: -2.5em;
-    visibility: hidden;
-}
-
-/* CONTENT */
-.home, .information, .training, .galery, .intern, .contact {
-  display: flex;
-  flex-direction: column;
-  border: dashed grey .2em;
-  height: 100vh;
-}
-
-.title{
-  display: flex;
-  border: dashed orange .2em;
-}
-
-.text {
-  display: flex;
-  border: dashed brown .2em;
-}
