@@ -47,3 +47,9 @@ nav a{
   border: solid black .2px;
   padding: .5em;
 }
+
+.boxes .images{
+  border: solid black .2px;
+  padding: .5em;
+  background-color: #bfefff;
+}
