@@ -19,12 +19,10 @@ document.addEventListener("DOMContentLoaded", function(){
   document.getElementById('photos').addEventListener("mouseover", appear);
   document.getElementById('intern').addEventListener("mouseover", appear);
 	// REMOVE SUBPAGES WHEN HOVERING AGAIN //
-	document.querySelector('.hid').addEventListener("mouseout", disappear);
-  // document.querySelector('.infobtn').addEventListener("mouseout", disappear);
-  // document.querySelector('.trainingbtn').addEventListener("mouseout", disappear);
-  // document.querySelector('.photosbtn').addEventListener("mouseout", disappear);
-  // document.querySelector('.internbtn').addEventListener("mouseout", disappear);
-
+  var hidElements = document.getElementsByClassName('hid');
+  for (i = 0; i<hidElements.length; i++){
+    hidElements[i].addEventListener("mouseout", disappear);
+  }
 });
 
 function hoverHeader(){
