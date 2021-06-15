@@ -12,18 +12,42 @@ document.addEventListener("DOMContentLoaded", function(){
   document.getElementById('photos').addEventListener("mouseout", hoverOutHeader);
   document.getElementById('intern').addEventListener("mouseout", hoverOutHeader);
   document.getElementById('contact').addEventListener("mouseout", hoverOutHeader);
+  // SHOWS SUBPAGES WHEN HOVERING //
+  document.getElementById('home').addEventListener("mouseover", appear);
+  document.getElementById('info').addEventListener("mouseover", appear);
+  document.getElementById('training').addEventListener("mouseover", appear);
+  document.getElementById('photos').addEventListener("mouseover", appear);
+  document.getElementById('intern').addEventListener("mouseover", appear);
+	// REMOVE SUBPAGES WHEN HOVERING AGAIN //
+	document.querySelector('.hid').addEventListener("mouseout", disappear);
+  // document.querySelector('.infobtn').addEventListener("mouseout", disappear);
+  // document.querySelector('.trainingbtn').addEventListener("mouseout", disappear);
+  // document.querySelector('.photosbtn').addEventListener("mouseout", disappear);
+  // document.querySelector('.internbtn').addEventListener("mouseout", disappear);
+
 });
 
 function hoverHeader(){
-  this.style.backgroundColor = "#87cdff";
-  this.style.transition = ".5s";
+  this.style.textDecoration = "underline";
+  this.style.transition = "1.5s";
 }
 
 function hoverOutHeader(){
-  this.style.backgroundColor = "#bfefff";
-  this.style.transition = ".5s";
+  this.style.textDecoration = "none";
+  this.style.transition = "1.5s";
 }
 
-function homeNews(){
+function appear(){
+	let parent = this.parentNode;
+	var nodes = parent.querySelectorAll(".hid");
+	for (var i = 0; i < nodes.length; i++) {
+    nodes[i].style.display = "block";
+	}
+}
 
+function disappear(){
+	var nodes = document.querySelectorAll("a.hid");
+	for (var i = 0; i < nodes.length; i++) {
+    nodes[i].style.display = "none";
+	}
 }

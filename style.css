@@ -17,30 +17,34 @@ header {
   display: flex;
   position: sticky;
   top: 0;
-  width: 100%;
+  flex-basis: 100%;
 }
 
 nav{
   display: flex;
+  flex-basis: 100%;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: #1A4447;
 }
 
 nav a{
   display: flex;
   text-decoration: none;
-  padding-top: .5em;
-  padding-bottom: .5em;
+  padding-top: 1em;
+  padding-bottom: 1em;
   padding-left: 1em;
   padding-right: 1em;
-  border: solid #969696 .2em;
-  background-color: #bfefff;
-  color: black;
+  color: white;
+}
+
+.hid{
+  display: none;
 }
 
 /* BOXES */
 .boxes{
   display: flex;
-  /* justify-content: center; */
-  /* justify-content: space-around; */
 }
 
 .schnupper, .competitions, .ranking, .corona{
@@ -52,4 +56,27 @@ nav a{
   border: solid black .2px;
   padding: .5em;
   background-color: #bfefff;
+}
+
+/* MAIN CONTENT */
+
+.mainContent{
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.content{
+  height: 100vh;
+}
+
+.news{
+  height: 100vh;
+}
+
+.slideshow{
+
+}
+
+.boxes{
+
 }
