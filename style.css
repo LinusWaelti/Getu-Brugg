@@ -1,9 +1,36 @@
-/* TODO: nav a space-around */
+/* FONT ADJUSTMENT */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+h1, h3 {
+  font-family: "Noto Sans", sans-serif;
+  padding-bottom: .2em;
+}
+
+p {
+  font-family: "Noto Serif", serif;
+  padding-bottom: 1.5em;
+  text-align: justify;
+}
+
+a {
+  font-family: "Noto Sans", sans-serif;
+  text-decoration: none;
+  color: black;
+}
+
+li {
+  font-family: "Noto Serif", serif;
+}
+
+ul {
+  padding-bottom: 1.5em;
+}
 
 /* ADJUSTING PRESETS */
 *{
   padding: 0;
   margin: 0;
+  scroll-behavior: smooth;
 }
 
 .mainContent{
@@ -18,6 +45,7 @@ header {
   position: sticky;
   top: 0;
   flex-basis: 100%;
+  margin-bottom: 1.5em;
 }
 
 nav{
@@ -45,6 +73,7 @@ nav a{
 /* BOXES */
 .boxes{
   display: flex;
+  padding-bottom: 1.5em;
 }
 
 .schnupper, .competitions, .ranking, .corona{
@@ -66,17 +95,20 @@ nav a{
 }
 
 .content{
-  height: 100vh;
+  padding-bottom: 2em;
 }
 
 .news{
   height: 100vh;
 }
 
-.slideshow{
-
+/* REMOVING BULLETS FROM UL */
+ul {
+  list-style: none;
+  padding-left: 1em;
 }
 
-.boxes{
-
+/* IMAGES */
+.images, .slideshow {
+  padding-bottom: 1.5em;
 }
