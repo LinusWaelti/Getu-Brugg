@@ -70,6 +70,11 @@ nav a{
   display: none;
 }
 
+#logo {
+  width: 60px;
+  height: auto;
+}
+
 /* BOXES */
 .boxes{
   display: flex;

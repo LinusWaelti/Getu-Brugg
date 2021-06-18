@@ -35,17 +35,17 @@ function hoverOutHeader(){
   this.style.transition = "1.5s";
 }
 
-function appear(){
-	let parent = this.parentNode;
-	var nodes = parent.querySelectorAll(".hid");
-	for (var i = 0; i < nodes.length; i++) {
-    nodes[i].style.display = "block";
-	}
-}
-
-function disappear(){
-	var nodes = document.querySelectorAll("a.hid");
-	for (var i = 0; i < nodes.length; i++) {
-    nodes[i].style.display = "none";
-	}
-}
+// function appear(){
+// 	let parent = this.parentNode;
+// 	var nodes = parent.querySelectorAll(".hid");
+// 	for (var i = 0; i < nodes.length; i++) {
+//     nodes[i].style.display = "block";
+// 	}
+// }
+//
+// function disappear(){
+// 	var nodes = document.querySelectorAll("a.hid");
+// 	for (var i = 0; i < nodes.length; i++) {
+//     nodes[i].style.display = "none";
+// 	}
+// }
