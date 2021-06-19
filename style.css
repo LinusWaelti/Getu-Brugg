@@ -155,3 +155,39 @@ ul {
 .images, .slideshow {
   padding-bottom: 1.5em;
 }
+
+/* TRAINING FORM */
+.registration{
+  display: flex;
+  flex-direction: column;
+}
+
+/* FOOTER */
+footer {
+  display: flex;
+  position: sticky;
+  top: 0;
+  flex-direction: row;
+  flex-basis: 100%;
+  margin-bottom: 1.5em;
+  justify-content: center;
+  background-color: #1A4447;
+  margin: 0;
+}
+
+footer h3, footer p{
+  color: white;
+  padding-bottom: 0;
+}
+
+footer h3{
+  padding: .5em;
+  padding-right: 1em;
+  border-right: solid .1em white;
+}
+
+footer p{
+  display: flex;
+  padding-left: 1em;
+  align-items: center;
+}

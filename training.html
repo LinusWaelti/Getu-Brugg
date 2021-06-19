@@ -6,13 +6,15 @@
     <link rel="stylesheet" href="style.css">
     <script src="hover.js"></script>
     <script src="script.js"></script>
+    <!-- src: https://www.emailjs.com/docs/sdk/send-form/ -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+      (function() {
+        emailjs.init("user_ppB1fg1ne065syN4NbozG");
+      })();
+    </script>
   </head>
   <body>
-    <!-- SLIDESHOW -->
-    <div class="slideshow">
-
-    </div>
-
     <header>
       <!--NAVBAR Content-->
       <nav>
@@ -36,11 +38,13 @@
             <a class="hid" href="photos.html#photos2017">2017</a>
             <a class="hid" href="photos.html#photos2016">2016</a>
         </div>
-        <div class="internbtn">
+        <!-- <div class="internbtn">
           <a id="intern" href="intern.html">Intern</a>
           <a class="hid" href="intern.html#internProgram">Jahresprogramm</a>
+        </div> -->
+        <div class="contactbtn">
+          <a id="contact" href="contact.html">Kontakt</a>
         </div>
-        <a id="contact" href="contact.html">Kontakt</a>
       </nav>
     </header>
 
@@ -91,14 +95,17 @@
       </div>
 
       <a id="trainingForm"></a>
-      <form class="registration" action="index.html" method="post">
-        <input type="text" name="" value="">
-        <input type="text" name="" value="">
-        <input type="text" name="" value="">
-        <input type="email" name="" value="">
-        <input type="text" name="" value="">
-        <input type="submit" name="" value="">
-      </form>
+      <div class="registrationForm">
+        <form id="trainingRegistrationForm" class="registration">
+          <input type="text" name="name" id="fullName" placeholder="Vor-, Nachname Turnerin *">
+          <input type="text" name="parentsName" id="fullNameParents" placeholder="Vor-, Nachname Eltern">
+          <input type="number"  name="athletesAge" id="age" placeholder="Jahrgang Turnerin *">
+          <input type="email"  name="athletesEmail" id="email" placeholder="Email Adresse *">
+          <textarea  name="extraMessage" id="message" placeholder="Mitteilung (Vorkenntnisse, Fragen, etc.)"></textarea>
+          <button type="button" id="submitButton">Submit</button>
+        </form>
+      </div>
+      <br><br><br><br><br><br><br><br><br>
 
     </div>
 

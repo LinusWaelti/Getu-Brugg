@@ -1,5 +1,5 @@
 // TODO: Removing the subpages
-// TODO: Slow the animation down 
+// TODO: Slow the animation down
 
 document.addEventListener("DOMContentLoaded", function(){
   // BOXES IN HEADER //
@@ -7,20 +7,20 @@ document.addEventListener("DOMContentLoaded", function(){
   document.getElementById('info').addEventListener("mouseover", hoverHeader);
   document.getElementById('training').addEventListener("mouseover", hoverHeader);
   document.getElementById('photos').addEventListener("mouseover", hoverHeader);
-  document.getElementById('intern').addEventListener("mouseover", hoverHeader);
+  // document.getElementById('intern').addEventListener("mouseover", hoverHeader);
   document.getElementById('contact').addEventListener("mouseover", hoverHeader);
   document.getElementById('home').addEventListener("mouseout", hoverOutHeader);
   document.getElementById('info').addEventListener("mouseout", hoverOutHeader);
   document.getElementById('training').addEventListener("mouseout", hoverOutHeader);
   document.getElementById('photos').addEventListener("mouseout", hoverOutHeader);
-  document.getElementById('intern').addEventListener("mouseout", hoverOutHeader);
+  // document.getElementById('intern').addEventListener("mouseout", hoverOutHeader);
   document.getElementById('contact').addEventListener("mouseout", hoverOutHeader);
   // SHOWS SUBPAGES WHEN HOVERING //
   document.getElementById('home').addEventListener("mouseover", appear);
   document.getElementById('info').addEventListener("mouseover", appear);
   document.getElementById('training').addEventListener("mouseover", appear);
   document.getElementById('photos').addEventListener("mouseover", appear);
-  document.getElementById('intern').addEventListener("mouseover", appear);
+  // document.getElementById('intern').addEventListener("mouseover", appear);
   document.getElementById('contact').addEventListener("mouseover", appear)
 	// REMOVE SUBPAGES WHEN HOVERING AGAIN //
   var hidElements = document.getElementsByClassName('hid');
@@ -45,7 +45,7 @@ function appear(){
   document.querySelector(".homebtn").style.display = "none";
   document.querySelector(".trainingbtn").style.display = "none";
   document.querySelector(".photosbtn").style.display = "none";
-  document.querySelector(".internbtn").style.display = "none";
+  // document.querySelector(".internbtn").style.display = "none";
   document.querySelector('.contactbtn').style.display = "none";
   document.querySelector(".infobtn").style.display = "none";
   parent.style.display = "flex";
