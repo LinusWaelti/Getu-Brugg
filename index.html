@@ -10,7 +10,7 @@
   <body>
     <header>
       <!-- Logo -->
-      <img id="logo" src="images\logo.jpg" alt="test">
+      <!-- <img id="logo" src="images\logo.jpg" alt="test"> -->
       <!--NAVBAR Content-->
       <nav>
         <div class="homebtn">
@@ -37,7 +37,9 @@
           <a id="intern" href="intern.html">Intern</a>
           <a class="hid" href="intern.html#internProgram">Jahresprogramm</a>
         </div>
-        <a id="contact" href="contact.html">Kontakt</a>
+        <div class="contactbtn">
+          <a id="contact" href="contact.html">Kontakt</a>
+        </div>
       </nav>
     </header>
 
@@ -50,8 +52,30 @@
       </div>
 
       <!-- SLIDESHOW -->
-      <div class="slideshow">
-        <img src="images\placeholder.jpg" alt="nie">
+      <!-- src slideshow: https://www.w3schools.com/howto/howto_js_slideshow.asp -->
+      <!-- Slideshow container -->
+      <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+          <img src="images\Fotos_Slideshow\GETU7.jpeg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+          <img src="images\Fotos_Slideshow\GETU3.jpeg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+          <img src="images\Fotos_Slideshow\GETU4.jpeg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+          <img src="images\Fotos_Slideshow\GETU5.jpeg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+          <img src="images\Fotos_Slideshow\GETU6.jpeg" style="width:100%">
+        </div>
       </div>
 
       <!-- BOXES -->
@@ -83,6 +107,8 @@
         <p>Was immer gerade wichtig ist.</p>
       </div>
     </div>
+
+    <script src="slideshow.js"></script>
 
   </body>
 </html>

@@ -18,12 +18,47 @@ a {
   color: black;
 }
 
+.ranking p{
+  font-family: "Noto Sans", sans-serif;
+  text-decoration: none;
+  color: black;
+}
+
 li {
   font-family: "Noto Serif", serif;
 }
 
 ul {
   padding-bottom: 1.5em;
+}
+
+/* SLIDESHOW */
+/* src slideshow: https://www.w3schools.com/howto/howto_js_slideshow.asp */
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  /* position: relative; */
+  margin: auto;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
 }
 
 /* ADJUSTING PRESETS */
@@ -79,11 +114,14 @@ nav a{
 .boxes{
   display: flex;
   padding-bottom: 1.5em;
+  padding-top: 1.5em;
 }
 
 .schnupper, .competitions, .ranking, .corona{
+  display: flex;
   border: solid black .2px;
   padding: .5em;
+  align-items: center;
 }
 
 .boxes .images{
