@@ -62,7 +62,7 @@ function disappear(){
   document.querySelector(".homebtn").style.display = "flex";
   document.querySelector(".trainingbtn").style.display = "flex";
   document.querySelector(".photosbtn").style.display = "flex";
-  document.querySelector(".internbtn").style.display = "flex";
+  // document.querySelector(".internbtn").style.display = "flex";
   document.querySelector('.contactbtn').style.display = "flex";
   document.querySelector(".infobtn").style.display = "flex";
 }
