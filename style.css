@@ -7,8 +7,8 @@ h1, h3 {
 }
 
 p {
-  font-family: "Noto Serif", serif;
-  padding-bottom: 1.5em;
+  font-family: "Noto Sans", sans-serif;
+  padding-bottom: 5em;
   text-align: justify;
 }
 
@@ -25,11 +25,11 @@ a {
 }
 
 li {
-  font-family: "Noto Serif", serif;
+  font-family: "Noto Sans", sans-serif;
 }
 
 ul {
-  padding-bottom: 1.5em;
+  padding-bottom: 3em;
 }
 
 /* SLIDESHOW */
@@ -80,7 +80,7 @@ header {
   position: sticky;
   top: 0;
   flex-basis: 100%;
-  margin-bottom: 1.5em;
+  margin-bottom: 4.5em;
 }
 
 nav{
@@ -110,8 +110,6 @@ nav a{
   display: flex;
 }
 
-
-
 /* BOXES */
 .boxes{
   display: flex;
@@ -123,14 +121,28 @@ nav a{
 .schnupper, .competitions, .ranking, .corona{
   display: flex;
   border: solid black .2px;
-  padding: .5em;
-  align-items: center;
+  /* padding: .5em; */
+  justify-content: center;
 }
 
 .boxes .images{
-  border: solid black .2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid #ddd .2px;
   padding: .5em;
   background-color: #bfefff;
+}
+
+.boxes .images p{
+  font-size: 2em;
+  padding-bottom: 0;
+}
+
+.ranking p{
+  display: flex;
+  align-items: center;
+  padding: 0;
 }
 
 /* MAIN CONTENT */
@@ -142,10 +154,6 @@ nav a{
 
 .content{
   padding-bottom: 2em;
-}
-
-.news{
-  height: 100vh;
 }
 
 /* REMOVING BULLETS FROM UL */
@@ -193,4 +201,66 @@ footer p{
   display: flex;
   padding-left: 1em;
   align-items: center;
+}
+
+/* ANCHORS */
+.anchor{
+  display: block;
+  position: relative;
+  top: -4.5em;
+  visibility: hidden;
+}
+
+/* FORMS */
+.registration{
+  border: solid .1em #ddd;
+}
+
+.registration input{
+  border: 0;
+  padding: .5em;
+  border-bottom: solid .1em #ddd;
+  font-size: 1em;
+  outline: none;
+}
+
+.registration input:focus{
+  border-bottom: solid .1em #E06F1C;
+}
+
+.registration input::placeholder{
+  font-size: 1em;
+}
+
+.registration textarea{
+  border: 0;
+  padding: .5em;
+  border-bottom: solid .1em #ddd;
+  margin-bottom: .5em;
+  height: 10em;
+  resize: none;
+  font-size: 1em;
+  outline: none;
+}
+
+.registration textarea:focus{
+  border-bottom: solid .1em #E06F1C;
+}
+
+.registration textarea::placeholder{
+  font-size: 1em;
+  font-family: "Noto Sans", sans-serif;
+}
+
+.registration button{
+  border: 0;
+  border-radius: .5em;
+  padding-bottom: .5em;
+  padding-top: .5em;
+  background-color: #1C4547;
+  color: white;
+}
+
+.registration button:hover{
+  background-color: #E06F1C;
 }
