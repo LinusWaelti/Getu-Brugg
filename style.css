@@ -203,6 +203,7 @@ footer p{
   align-items: center;
 }
 
+<<<<<<< Updated upstream
 /* ANCHORS */
 .anchor{
   display: block;
@@ -263,4 +264,9 @@ footer p{
 
 .registration button:hover{
   background-color: #E06F1C;
+=======
+/* TABLE */
+th {
+  text-align: left;
+>>>>>>> Stashed changes
 }
