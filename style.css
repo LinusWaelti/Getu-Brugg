@@ -101,18 +101,21 @@ nav a{
   color: white;
 }
 
-.hid{
-  display: none;
-}
-
-#logo {
+/* #logo {
   width: 60px;
   height: auto;
+} */
+
+.infobtn, .homebtn, .trainingbtn, .photosbtn{
+  display: flex;
 }
+
+
 
 /* BOXES */
 .boxes{
   display: flex;
+  flex-direction: column;
   padding-bottom: 1.5em;
   padding-top: 1.5em;
 }
