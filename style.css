@@ -36,6 +36,10 @@ td{
   font-family: "Noto Sans", sans-serif;
 }
 
+th{
+  font-family: "Noto Sans", sans-serif;
+}
+
 /* SLIDESHOW */
 /* src slideshow: https://www.w3schools.com/howto/howto_js_slideshow.asp */
 * {box-sizing:border-box}
@@ -105,13 +109,12 @@ nav a{
   color: white;
 }
 
-/* #logo {
-  width: 60px;
-  height: auto;
-} */
-
-.infobtn, .homebtn, .trainingbtn, .photosbtn{
+.infobtn, .homebtn, .trainingbtn, .photosbtn, .internbtn{
   display: flex;
+}
+
+.photosbtn .subpages{
+  cursor: pointer;
 }
 
 /* BOXES */
@@ -120,6 +123,7 @@ nav a{
   flex-direction: column;
   padding-bottom: 1.5em;
   padding-top: 1.5em;
+  cursor: pointer;
 }
 
 .schnupper, .competitions, .ranking, .corona{
@@ -129,6 +133,14 @@ nav a{
   background-color: #C1F0FF;
   justify-content: center;
   margin-bottom: .2em;
+}
+
+.schnupper:hover, .competitions:hover, .ranking:hover, .corona:hover {
+  background-color: #DE6A04;
+}
+
+#box2017:hover, #box2018:hover, #box2019:hover, #box2021:hover {
+  background-color: #DE6A04;
 }
 
 .boxes .images{
