@@ -8,7 +8,7 @@ h1, h3 {
 
 p {
   font-family: "Noto Sans", sans-serif;
-  padding-bottom: 5em;
+  padding-bottom: 2em;
   text-align: justify;
 }
 
@@ -30,6 +30,10 @@ li {
 
 ul {
   padding-bottom: 3em;
+}
+
+td{
+  font-family: "Noto Sans", sans-serif;
 }
 
 /* SLIDESHOW */
@@ -120,9 +124,11 @@ nav a{
 
 .schnupper, .competitions, .ranking, .corona{
   display: flex;
-  border: solid black .2px;
-  /* padding: .5em; */
+  border: solid #ddd .2px;
+  padding: .5em;
+  background-color: #C1F0FF;
   justify-content: center;
+  margin-bottom: .2em;
 }
 
 .boxes .images{
@@ -132,6 +138,7 @@ nav a{
   border: solid #ddd .2px;
   padding: .5em;
   background-color: #bfefff;
+  margin-bottom: .2em;
 }
 
 .boxes .images p{
@@ -171,6 +178,7 @@ ul {
 .registration{
   display: flex;
   flex-direction: column;
+  margin-bottom: 5em;
 }
 
 /* FOOTER */
@@ -203,7 +211,6 @@ footer p{
   align-items: center;
 }
 
-<<<<<<< Updated upstream
 /* ANCHORS */
 .anchor{
   display: block;
@@ -264,9 +271,9 @@ footer p{
 
 .registration button:hover{
   background-color: #E06F1C;
-=======
+}
+
 /* TABLE */
 th {
   text-align: left;
->>>>>>> Stashed changes
 }
