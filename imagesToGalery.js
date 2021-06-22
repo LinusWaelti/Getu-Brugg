@@ -9,40 +9,52 @@ document.addEventListener("DOMContentLoaded", function(){
 
 function printImages2021(){
   document.querySelector(".boxes").style.display = "none";
+  document.querySelector("#photosYear").innerHTML = "";
   for(i=1; i<=32; i++) {
     var test = document.createElement ("img");
-    test.src = "images/2021_ungeordnet/IMG ("+i+").jpg";
+    test.src = "images/2021_bearbeitet/IMG ("+i+").jpg";
+    test.style.width = "20%";
+    test.style.height = "auto";
     document.querySelector("#photosYear").appendChild(test)
   }
-  document.querySelector("h1").innerHTML += " 2021";
+  document.querySelector("h1").innerHTML = "Fotos 2021";
 }
 
 function printImages2019(){
-  document.querySelector(".mainContent").style.display = "none";
+  document.querySelector(".boxes").style.display = "none";
+  document.querySelector("#photosYear").innerHTML = "";
   for(i=1; i<=88; i++) {
     var test = document.createElement ("img");
-    test.src = "images/2019_ungeordnet/IMG ("+i+").jpeg";
+    test.src = "images/2019_bearbeitet/IMG ("+i+").jpg";
+    test.style.width = "20%";
+    test.style.height = "auto";
     document.querySelector("#photosYear").appendChild(test);
   }
-  document.querySelector("h1").innerHTML += " 2019";
+  document.querySelector("h1").innerHTML = "Fotos 2019";
 }
 
 function printImages2018(){
-  document.querySelector(".mainContent").style.display = "none";
+  document.querySelector(".boxes").style.display = "none";
+  document.querySelector("#photosYear").innerHTML = "";
   for(i=1; i<=11; i++) {
     var test = document.createElement ("img");
-    test.src = "images/2017_ungeordnet/IMG ("+i+").jpeg";
+    test.src = "images/2017_bearbeitet/IMG ("+i+").jpg";
+    test.style.width = "20%";
+    test.style.height = "auto";
     document.querySelector ("#photosYear").appendChild(test)
   }
-  document.querySelector("h1").innerHTML += " 2018";
+  document.querySelector("h1").innerHTML = "Fotos 2018";
 }
 
 function printImages2017(){
-  document.querySelector(".mainContent").style.display = "none";
+  document.querySelector(".boxes").style.display = "none";
+  document.querySelector("#photosYear").innerHTML = "";
   for(i=1; i<=108; i++) {
     var test = document.createElement ("img");
-    test.src = "images/2017_ungeordnet/IMG ("+i+").jpeg";
+    test.src = "images/2017_bearbeitet/IMG ("+i+").jpg";
+    test.style.width = "20%";
+    test.style.height = "auto";
     document.querySelector ("#photosYear").appendChild(test)
   }
-  document.querySelector("h1").innerHTML += " 2017";
+  document.querySelector("h1").innerHTML = "Fotos 2017";
 }
